@@ -1,0 +1,115 @@
+/**
+ * Style
+ */
+body {
+    height: 100vh;
+    width: 100vw;
+    background: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/**
+* Customize
+*/
+
+#TL-form {
+    position:relative;
+    width: 500px;
+    margin: 50px auto;
+}
+
+#TL-form .item-container {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+#TL-form input {
+    display: inline-block;
+    flex-grow: 3;
+    font-size: 1em;
+    width: 60%;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    padding: 14px;
+    color: #fff;
+}
+
+#TL-form button {
+    cursor:pointer;
+    outline:none;
+    margin-left: 10px;
+    color: #fff;
+    border: none;
+    flex-grow: 1;
+    box-sizing: border-box;
+    font-size: 1.25em;
+    padding: 14px;
+    width: 15%;
+    background-color: #F2673A;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+#TL-form .list-body{
+
+    padding:10px;
+    color:#fff;
+}
+#TL-form .item{
+    font-size: 1.25em;
+    display: block;
+    position: relative;
+    list-style: none;
+    padding:14px 40px 14px 14px;
+}
+#TL-form .item button{
+    opacity:0.4;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    position:absolute;
+    top:0;
+    right:0;
+}
+#TL-form .item button:hover{
+    opacity:1;
+}
+
+#TL-form #sub-button{
+    display: none;
+    position: absolute;
+    height:54px;
+    width:96.75px;
+    cursor: pointer;
+
+}
+
+#TL-form .sub-inner{
+    position: relative;
+    font-size: 0.7em;
+}
+
+.clearFix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearFix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearFix { height: 1%; }
+.clearFix { display: block; }
+/* close commented backslash hack */
+
+
+
+
